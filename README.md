@@ -250,3 +250,44 @@ Tampilan :<br>
 
 ## 5. Menambahkan CSS Selector
 
+Selanjutnya menambahkan CSS Selector menggunakan <b>ID dan Class Selector.</b> Pada file style_eksternal.css, tambahkan kode berikut.
+```
+/* ID Selector */ 
+#intro { 
+    background: #418fb1; 
+    border: 1px solid #099249; 
+    min-height: 100px; 
+    padding: 10px; 
+} 
+#intro h1 { 
+    text-align: left; 
+    border: 0; 
+    color: #fff; 
+} 
+/* Class Selector */ 
+.button { 
+    padding: 15px 20px; 
+    background: #bebcbd; 
+    color: #fff; 
+    display: inline-block; 
+    margin: 10px; 
+    text-decoration: none; 
+} 
+.btn-primary { 
+    background: #E42A42; 
+```
+
+Maka tampilan outputnya menjadi :<br>
+![CSS Selector](Pic/cssselector.png)<br>
+
+<hr>
+
+## Pertanyaan 
+1. Lakukan eksperimen dengan mengubah dan menambah properti dan nilai pada kode CSS dengan mengacu pada CSS Cheat Sheet yang diberikan pada file terpisah dari modul ini.
+2. Apa perbedaan pendeklarasian CSS elemen h1 {...} dengan #intro h1 {...}? berikan penjelasannya!
+3. Apabila ada deklarasi CSS secara internal, lalu ditambahkan CSS eksternal dan inline CSS pada elemen yang sama. Deklarasi manakah yang akan ditampilkan pada browser? Berikan penjelasan dan contohnya!
+4. Pada sebuah elemen HTML terdapat ID dan Class, apabila masing-masing selector tersebut terdapat deklarasi CSS, maka deklarasi manakah yang akan ditampilkan pada browser? Berikan penjelasan dan contohnya! ( <p id="paragraf-1" class="text-paragraf"> )
+
+## Jawaban
+
+1. 
