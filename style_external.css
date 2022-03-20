@@ -1,5 +1,5 @@
 nav { 
-    background: #20A759; 
+    background: #222e27; 
     color:#fff; 
     padding: 10px; 
 } 
@@ -10,12 +10,12 @@ nav a {
 } 
 nav .active, 
 nav a:hover { 
-    background: #0B6B3A; 
+    background: #242b27; 
 }
 /* ID Selector */ 
 #intro { 
-    background: #418fb1; 
-    border: 1px solid #099249; 
+    background: #9bd396; 
+    border: 1px solid #1a221e; 
     min-height: 100px; 
     padding: 10px; 
 } 
@@ -34,5 +34,4 @@ nav a:hover {
     text-decoration: none; 
 } 
 .btn-primary { 
-    background: #E42A42; 
-}
+    background: #E42A42; }

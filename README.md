@@ -285,9 +285,108 @@ Maka tampilan outputnya menjadi :<br>
 ## Pertanyaan 
 1. Lakukan eksperimen dengan mengubah dan menambah properti dan nilai pada kode CSS dengan mengacu pada CSS Cheat Sheet yang diberikan pada file terpisah dari modul ini.
 2. Apa perbedaan pendeklarasian CSS elemen h1 {...} dengan #intro h1 {...}? berikan penjelasannya!
-3. Apabila ada deklarasi CSS secara internal, lalu ditambahkan CSS eksternal dan inline CSS pada elemen yang sama. Deklarasi manakah yang akan ditampilkan pada browser? Berikan penjelasan dan contohnya!
-4. Pada sebuah elemen HTML terdapat ID dan Class, apabila masing-masing selector tersebut terdapat deklarasi CSS, maka deklarasi manakah yang akan ditampilkan pada browser? Berikan penjelasan dan contohnya! ( <p id="paragraf-1" class="text-paragraf"> )
+3.   Berikan penjelasan dan contohnya!
+4. Pada sebuah elemen HTML terdapat ID dan Class, apabila masing-masing selector tersebut terdapat deklarasi CSS, maka deklarasi manakah yang akan ditampilkan pada browser? Berikan penjelasan dan contohnya! ( <p id="paragraf-1"class="text-paragraf"> )
 
 ## Jawaban
 
-1. 
+1. Disini saya merubah warna dari header sampai kebawah dan saya merubah paragraf menjadi rata kiri-kanan dan pada header saya jadikan center. Berikut tampilannya : <br>
+![Jawaban 1](Pic/jawaban1.png)<br>
+
+2. Perbedaannya adalah CSS elemen h1 {...} berfungsi untuk merubah semua yang ada dalam elemen h1. Sedangkan h1 intro{...} atau h1 i{...} berfungsi merubah yang ada didalam tag intro tersebut. Seperti pada header CSS Interal dan Inline CSS yang dibuat tadi.<br>
+![Jawaban 2](Pic/jawaban2.png)<br>
+
+3. Setelah saya coba bila ada deklarasi internal, CSS external dan inline CSS pada elemen yang sama, maka yang akan ditampilkan pada browser adalah dengan urutan berikut :<br>
+    a. Inline CSS<br>
+    b. CSS internal<br>
+    c. CSS external<br>
+
+Berikut syntax html yang saya buat :<br>
+```
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="test_style.css" type="text/css">
+    <style>
+        h1 {
+            color: greenyellow;
+            text-align: center;
+        } 
+        p {
+            color: darkblue;
+            text-align: left;
+        }
+        </style>
+</head>
+<body>
+ 
+    <h1 style="text-align: left; color: darkred;">Belajar HTML dan CSS</h1>
+    <p style="text-align:center; color:aquamarine">Disini saya sedang belajar HTML Dan CSS</p>
+ 
+</body>
+</html>
+```
+Kemudian berikut syntax CSS externalnya :<br>
+```
+h1 {
+    color: darkviolet;
+    text-align: right;
+}
+
+p {
+    color: black;
+    text-align: right;
+}
+```
+
+Dan tampilan dari syntax tersebut :<br>
+![Jawaban 3](Pic/jawaban3.png)<br>
+
+Bila saya hilangkan Inline CSS, yang ditampilkan adalah CSS external terlebih dahulu. Berikut bila saya hapus <b><i>inline CSS</i></b>
+```
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="test_style.css" type="text/css">
+    <style>
+        h1 {
+            color: greenyellow;
+            text-align: center;
+        } 
+        p {
+            color: darkblue;
+            text-align: left;
+        }
+        </style>
+</head>
+<body>  
+ 
+    <h1>Belajar HTML dan CSS</h1>
+    <p>Disini saya sedang belajar HTML Dan CSS</p>
+ 
+</body>
+</html>
+```
+Berikut tampilannya<br>
+![Jawaban 3-1](Pic/jawaban3-1.png)<br>
+
+4. Dari percobaan yang saya lakukan, yang ditampilkan pada browser adalah ID selector.<br>
+
+Berikut syntax yang saya buat : <br>
+```
+<!DOCTYPE html>
+<html>
+<body>
+<style>
+#paragraf-1 {color: aqua;}
+.text-paragraf {color: red;}
+</style>
+
+<p id="paragraf-1" class="text-paragraf"> test dan coba</p>
+
+</body>
+</html>
+```
+
+Output : <br>
+![Jawaban 4](Pic/jawaban4.png)<br>
